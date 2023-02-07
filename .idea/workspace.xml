@@ -5,73 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e74dc85-b4be-495e-9c7b-cf39ed4d8e26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/densoft/amqp/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/densoft/amqp/RabbitMQMessageProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/test/java/com/densoft/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/densoft/apigw/ApiGWApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/test/java/com/densoft/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/densoft/clients/fraud/FraudCheckResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/densoft/clients/fraud/FraudClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/densoft/clients/notifications/NotificationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/densoft/clients/notifications/NotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/test/java/com/densoft/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/densoft/customer/CustomerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/densoft/customer/configuration/CustomerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/densoft/customer/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/densoft/customer/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/densoft/customer/payload/CustomerRegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/densoft/customer/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/densoft/customer/services/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/test/java/com/densoft/customer/CustomerApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/densoft/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/test/java/com/densoft/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/densoft/fraud/FraudApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/densoft/fraud/controller/FraudController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/densoft/fraud/model/FraudCheckHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/densoft/fraud/repo/FraudCheckHistoryRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/java/com/densoft/fraud/service/FraudCheckService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fraud/src/test/java/com/densoft/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/densoft/notification/NotificationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/densoft/notification/config/NotificationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/densoft/notification/controller/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/densoft/notification/model/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/densoft/notification/rabbitmq/NotificationConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/densoft/notification/repo/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/java/com/densoft/notification/service/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notifications/src/test/java/com/densoft/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-docker.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-docker.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application-docker.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notifications/src/main/resources/application-docker.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +57,11 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="build-docker-image" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="2LHCCycDYy5kVt2KBqP2SWIB0OR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -133,7 +84,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/dennis/IdeaProjects/customer-services/fraud/src/main/resources",
+    "last_opened_file_path": "/home/dennis/IdeaProjects/customer-services/notifications/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -148,7 +99,11 @@
       <recent name="org.densoft.payload" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/notifications/src/main/resources" />
       <recent name="$PROJECT_DIR$/fraud/src/main/resources" />
+      <recent name="$PROJECT_DIR$/customer/src/main/resources" />
+      <recent name="$PROJECT_DIR$/eureka-server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/api-gateway/src/main/resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -281,7 +236,7 @@
       <updated>1675518498500</updated>
       <workItem from="1675518500094" duration="7655000" />
       <workItem from="1675603030866" duration="29851000" />
-      <workItem from="1675710848571" duration="4490000" />
+      <workItem from="1675710848571" duration="17122000" />
     </task>
     <servers />
   </component>

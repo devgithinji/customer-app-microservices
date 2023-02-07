@@ -34,6 +34,8 @@ services:
     container_name: zipkin
     ports:
       - "9411:9411"
+    networks:
+      - spring
 
   rabbitmq:
     image: rabbitmq:3.9.11-management-alpine
@@ -41,10 +43,86 @@ services:
     ports:
       - "5672:5672"
       - "15672:15672"
+    networks:
+      - spring
+
+  eureka-server:
+    image: densoftdev/eureka-server:latest
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+    depends_on:
+      - zipkin
+
+  api-gateway:
+    image: densoftdev/api-gateway:latest
+    container_name: api-gateway
+    ports:
+      - "8084:8084"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+    depends_on:
+      - zipkin
+      - eureka-server
+  customer:
+    image: densoftdev/customer:latest
+    container_name: customer
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - eureka-server
+      - postgres
+      - rabbitmq
+  fraud:
+    image: densoftdev/fraud:latest
+    container_name: fraud
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - eureka-server
+      - postgres
+      - rabbitmq
+  notification:
+    image: densoftdev/notifications:latest
+    container_name: notification
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    networks:
+      - spring
+      - postgres
+    depends_on:
+      - zipkin
+      - eureka-server
+      - postgres
+      - rabbitmq
+
+
 
 networks:
   postgres:
-   driver: bridge
+    driver: bridge
+  spring:
+    driver: bridge
 
 volumes:
   postgres:
