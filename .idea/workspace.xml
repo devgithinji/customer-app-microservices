@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e74dc85-b4be-495e-9c7b-cf39ed4d8e26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/boostrap/postgres/configmap.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/boostrap/postgres/service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/boostrap/postgres/statefulset.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/boostrap/postgres/volume.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/boostrap/rabbbitmq/configmap.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/boostrap/rabbbitmq/rbac.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/boostrap/rabbbitmq/services.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/boostrap/rabbbitmq/statefulset.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/boostrap/zipkin/service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/minikube/boostrap/zipkin/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-default.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-kube.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/densoft/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/densoft/clients/fraud/FraudClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/densoft/clients/notifications/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/densoft/clients/notifications/NotificationClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/densoft/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/densoft/customer/CustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/densoft/fraud/FraudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/densoft/fraud/FraudApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifications/src/main/java/com/densoft/notification/NotificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notifications/src/main/java/com/densoft/notification/NotificationApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +57,6 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
-    <option name="enabledProfiles">
-      <list>
-        <option value="build-docker-image" />
-      </list>
-    </option>
   </component>
   <component name="ProjectId" id="2LHCCycDYy5kVt2KBqP2SWIB0OR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -82,7 +79,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dennis/IdeaProjects/customer-services/notifications/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dennis/IdeaProjects/customer-services/clients/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -98,11 +95,11 @@
       <recent name="org.densoft.payload" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/clients/src/main/resources" />
       <recent name="$PROJECT_DIR$/notifications/src/main/resources" />
       <recent name="$PROJECT_DIR$/fraud/src/main/resources" />
       <recent name="$PROJECT_DIR$/customer/src/main/resources" />
       <recent name="$PROJECT_DIR$/eureka-server/src/main/resources" />
-      <recent name="$PROJECT_DIR$/api-gateway/src/main/resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -122,7 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FraudApplication">
+  <component name="RunManager" selected="Spring Boot.NotificationApplication">
     <configuration name="ApiGWApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.densoft.apigw.ApiGWApplication" />
@@ -142,6 +139,9 @@
       </method>
     </configuration>
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="default" />
+      </envs>
       <module name="customer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.densoft.customer.CustomerApplication" />
       <extension name="coverage">
@@ -178,6 +178,9 @@
       </method>
     </configuration>
     <configuration name="FraudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="default" />
+      </envs>
       <module name="fraud" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.densoft.fraud.FraudApplication" />
       <extension name="coverage">
@@ -196,6 +199,9 @@
       </method>
     </configuration>
     <configuration name="NotificationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="SPRING_PROFILES_ACTIVE" value="default" />
+      </envs>
       <module name="notifications" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.densoft.notification.NotificationApplication" />
       <extension name="coverage">
@@ -203,6 +209,11 @@
           <option name="PATTERN" value="com.densoft.notification.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+      </extension>
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
       </extension>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -238,7 +249,8 @@
       <workItem from="1675710848571" duration="34308000" />
       <workItem from="1675847977078" duration="8024000" />
       <workItem from="1675859508549" duration="2518000" />
-      <workItem from="1675862924589" duration="8677000" />
+      <workItem from="1675862924589" duration="20826000" />
+      <workItem from="1676017144059" duration="2517000" />
     </task>
     <servers />
   </component>

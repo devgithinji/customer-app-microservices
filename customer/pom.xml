@@ -51,6 +51,7 @@
             <groupId>com.densoft</groupId>
             <artifactId>amqp</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -59,7 +60,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.densoft</groupId>
+            <groupId>com.densoft</groupId>
             <artifactId>clients</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
